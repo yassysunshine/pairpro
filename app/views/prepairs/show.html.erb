@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @prepair.title %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @prepair.content %>
+</p>
+
+<%= link_to 'Edit', edit_prepair_path(@prepair) %> |
+<%= link_to 'Back', prepairs_path %>

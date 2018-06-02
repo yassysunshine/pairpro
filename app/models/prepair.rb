@@ -1,0 +1,2 @@
+class Prepair < ApplicationRecord
+end

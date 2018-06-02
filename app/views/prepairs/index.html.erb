@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Prepairs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Content</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @prepairs.each do |prepair| %>
+      <tr>
+        <td><%= prepair.title %></td>
+        <td><%= prepair.content %></td>
+        <td><%= link_to 'Show', prepair %></td>
+        <td><%= link_to 'Edit', edit_prepair_path(prepair) %></td>
+        <td><%= link_to 'Destroy', prepair, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Prepair', new_prepair_path %>
